@@ -405,6 +405,16 @@
               <FileType>8</FileType>
               <FilePath>.\shape.cpp</FilePath>
             </File>
+            <File>
+              <FileName>rectangle.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>.\rectangle.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>rectangle.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\rectangle.h</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>

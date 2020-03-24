@@ -2,6 +2,7 @@
 ".\dbg\bsp.o"
 ".\dbg\main.o"
 ".\dbg\shape.o"
+".\dbg\rectangle.o"
 ".\dbg\system_tm4c123gh6pm.o"
 ".\dbg\startup_tm4c123gh6pm.o"
 ".\dbg\qep_hsm.o"

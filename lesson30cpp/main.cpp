@@ -2,10 +2,17 @@
 #include "qpc.h"
 #include "bsp.h"
 #include "shape.h"
+#include "rectangle.h"
 
 Q_DEFINE_THIS_FILE
 
 QXSemaphore SW1_sema;
+
+/*Shape instance*/
+Shape s1(1,2); // static allocation
+
+/*Rectangle instance*/
+Rectangle r1(1, 2, 15, 10);
 
 uint32_t stack_blinky1[40];
 QXThread blinky1;
@@ -43,24 +50,31 @@ void main_blinky3(QXThread * const me) {
     }
 }
 
-/*Objects*/
-Shape s1(1,2); // static allocation
+
 
 int main() {
     Shape s2(3,4); // dynamic allocation
     Shape *s3_p = new Shape(5, 6); // dynamic memory allocation
+	uint32_t r1Arear1;
 
     /*Move the guys*/
     s1.moveBy(7, 8);
     s2.moveBy(9, 10);
     s3_p->moveBy(-1, -2);
 
-    /**/
+    /*Assertions*/
     Q_ASSERT(s1.distanceFrom(&s1) == 0U);
     Q_ASSERT(s1.distanceFrom(&s2) == s2.distanceFrom(&s1));
     Q_ASSERT(s1.distanceFrom(&s1) <= 
             s1.distanceFrom(&s2) + s2.distanceFrom(s3_p));
-   
+	
+		/*Rectangle draw*/
+		r1.draw();
+		r1Arear1 = r1.area();
+		/*Inheritance*/
+		r1.moveBy(7, 8);
+		Q_ASSERT(r1.distanceFrom(&r1) == 0U);
+	
     /*Free s3_p heap memory*/
     delete s3_p;
     

@@ -17,3 +17,4 @@
 .\dbg\main.o: ..\qpc\include\qs_dummy.h
 .\dbg\main.o: bsp.h
 .\dbg\main.o: shape.h
+.\dbg\main.o: rectangle.h
