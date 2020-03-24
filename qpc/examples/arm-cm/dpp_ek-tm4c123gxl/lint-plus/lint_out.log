@@ -1,0 +1,59 @@
+
+--- Module:   C:\qp_lab\qpc\examples\arm-cm\dpp_ek-tm4c123gxl\philo.c (C)
+C:\qp_lab\qpc\examples\arm-cm\dpp_ek-tm4c123gxl\philo.c  58  note 9033: cannot cast 'signed32' to different essential 
+    type 'unsigned8' [MISRA 2012 Rule 10.8, required]
+C:\qp_lab\qpc\examples\arm-cm\dpp_ek-tm4c123gxl\philo.c  58  note 947: pointer subtraction 
+    [MISRA 2012 Rule 18.2, required]
+C:\qp_lab\qpc\examples\arm-cm\dpp_ek-tm4c123gxl\philo.c  90  note 9034: cannot assign 'enum (DPPSignals)' to different 
+    essential type 'signed32' [MISRA 2012 Rule 10.3, required]
+C:\qp_lab\qpc\examples\arm-cm\dpp_ek-tm4c123gxl\philo.c  90  warning 641: implicit conversion of enum 'DPPSignals' to 
+    integral type 'int'
+C:\qp_lab\qpc\examples\arm-cm\dpp_ek-tm4c123gxl\philo.c  118  note 9034: cannot assign 'enum (DPPSignals)' to different 
+    essential type 'signed32' [MISRA 2012 Rule 10.3, required]
+C:\qp_lab\qpc\examples\arm-cm\dpp_ek-tm4c123gxl\philo.c  118  warning 641: implicit conversion of enum 'DPPSignals' to 
+    integral type 'int'
+C:\qp_lab\qpc\examples\arm-cm\dpp_ek-tm4c123gxl\philo.c  119  note 9034: cannot assign 'enum (DPPSignals)' to different 
+    essential type 'signed32' [MISRA 2012 Rule 10.3, required]
+C:\qp_lab\qpc\examples\arm-cm\dpp_ek-tm4c123gxl\philo.c  119  warning 641: implicit conversion of enum 'DPPSignals' to 
+    integral type 'int'
+C:\qp_lab\qpc\examples\arm-cm\dpp_ek-tm4c123gxl\philo.c  164  warning 641: implicit conversion of enum 'DPPSignals' to 
+    integral type 'int'
+C:\qp_lab\qpc\examples\arm-cm\dpp_ek-tm4c123gxl\philo.c  207  warning 641: implicit conversion of enum 'DPPSignals' to 
+    integral type 'int'
+--- Module Wrap-up
+
+--- Module:   C:\qp_lab\qpc\examples\arm-cm\dpp_ek-tm4c123gxl\table.c (C)
+C:\qp_lab\qpc\examples\arm-cm\dpp_ek-tm4c123gxl\table.c  101  note 9034: cannot assign 'enum (DPPSignals)' to different 
+    essential type 'signed32' [MISRA 2012 Rule 10.3, required]
+C:\qp_lab\qpc\examples\arm-cm\dpp_ek-tm4c123gxl\table.c  101  warning 641: implicit conversion of enum 'DPPSignals' to 
+    integral type 'int'
+C:\qp_lab\qpc\examples\arm-cm\dpp_ek-tm4c123gxl\table.c  102  note 9034: cannot assign 'enum (DPPSignals)' to different 
+    essential type 'signed32' [MISRA 2012 Rule 10.3, required]
+C:\qp_lab\qpc\examples\arm-cm\dpp_ek-tm4c123gxl\table.c  102  warning 641: implicit conversion of enum 'DPPSignals' to 
+    integral type 'int'
+C:\qp_lab\qpc\examples\arm-cm\dpp_ek-tm4c123gxl\table.c  103  note 9034: cannot assign 'enum (DPPSignals)' to different 
+    essential type 'signed32' [MISRA 2012 Rule 10.3, required]
+C:\qp_lab\qpc\examples\arm-cm\dpp_ek-tm4c123gxl\table.c  103  warning 641: implicit conversion of enum 'DPPSignals' to 
+    integral type 'int'
+C:\qp_lab\qpc\examples\arm-cm\dpp_ek-tm4c123gxl\table.c  104  note 9034: cannot assign 'enum (DPPSignals)' to different 
+    essential type 'signed32' [MISRA 2012 Rule 10.3, required]
+C:\qp_lab\qpc\examples\arm-cm\dpp_ek-tm4c123gxl\table.c  104  warning 641: implicit conversion of enum 'DPPSignals' to 
+    integral type 'int'
+C:\qp_lab\qpc\examples\arm-cm\dpp_ek-tm4c123gxl\table.c  125  warning 527: statement is unreachable due to unconditional 
+    transfer of control by 'non-returning call expression' statement [MISRA 2012 Rule 2.1, required]
+C:\qp_lab\qpc\examples\arm-cm\dpp_ek-tm4c123gxl\table.c  151  warning 641: implicit conversion of enum 'DPPSignals' to 
+    integral type 'int'
+C:\qp_lab\qpc\examples\arm-cm\dpp_ek-tm4c123gxl\table.c  176  warning 641: implicit conversion of enum 'DPPSignals' to 
+    integral type 'int'
+C:\qp_lab\qpc\examples\arm-cm\dpp_ek-tm4c123gxl\table.c  211  warning 641: implicit conversion of enum 'DPPSignals' to 
+    integral type 'int'
+C:\qp_lab\qpc\examples\arm-cm\dpp_ek-tm4c123gxl\table.c  222  warning 641: implicit conversion of enum 'DPPSignals' to 
+    integral type 'int'
+--- Module Wrap-up
+Count   Type    Number  Text
+
+1       warning 527     statement is unreachable due to unconditional transfer of control by '__string__' statement
+13      warning 641     implicit conversion of enum __symbol__ to integral type __type__
+1       note    947     pointer subtraction
+1       note    9033    cannot cast '__essential-type__' to __wider/different__ essential type '__essential-type__'
+7       note    9034    cannot assign '__essential-type__' to __narrow/different__ essential type '__essential-type__'

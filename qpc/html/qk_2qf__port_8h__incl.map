@@ -1,0 +1,10 @@
+<map id="qf_port.h" name="qf_port.h">
+<area shape="rect" id="node1" title="QF/C port example for QK, generic C compiler." alt="" coords="119,5,191,32"/>
+<area shape="rect" id="node2" title=" " alt="" coords="9,80,92,107"/>
+<area shape="rect" id="node3" href="$qk__port_8h.html" title="QK/C port example for a generic C compiler." alt="" coords="117,80,193,107"/>
+<area shape="rect" id="node8" href="$qf_8h.html" title="QF/C platform&#45;independent public interface." alt="" coords="221,155,264,181"/>
+<area shape="rect" id="node4" href="$qk_8h.html" title="QK/C (preemptive non&#45;blocking kernel) platform&#45;independent public interface." alt="" coords="127,155,174,181"/>
+<area shape="rect" id="node5" href="$qequeue_8h.html" title="QP natvie, platform&#45;independent, thread&#45;safe event queue interface." alt="" coords="5,229,88,256"/>
+<area shape="rect" id="node6" href="$qmpool_8h.html" title="QP native, platform&#45;independent memory pool QMPool interface." alt="" coords="112,229,187,256"/>
+<area shape="rect" id="node7" href="$qpset_8h.html" title="QP native, platform&#45;independent priority sets of 32 or 64 elements." alt="" coords="211,229,277,256"/>
+</map>
