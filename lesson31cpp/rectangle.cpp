@@ -5,7 +5,8 @@ Rectangle::Rectangle(int16_t x0, int16_t y0,
 										:Shape(x0,y0),
 										width(w0),
 										height (h0)
-{}
+{
+}
 
 
 	void Rectangle::draw(void) const{
