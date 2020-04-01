@@ -26,14 +26,7 @@ void shape_moveBy(Shape * const me, int16_t dx, int16_t dy);
 int16_t shape_distanceFrom(Shape const * const me, Shape const * other);
 
 /*Virtual calls - Late binding*/
-static inline void Shape_draw_vcall(Shape const * const me){
-	//me->vptr->draw(me);
-	(*me->vptr->draw)(me);
-}
-	
-static inline uint32_t Shape_area_vcall(Shape const * const me){
-	//return me->vptr->area(me);
-	return (*me->vptr->area)(me);
-}
+#define SHAPE_DRAW_VCALL(me) (*(me)->vptr->draw)((me))
+#define SHAPE_AREA_VCALL(me) (*(me)->vptr->area)((me))
 
 #endif // SHAPE_H
