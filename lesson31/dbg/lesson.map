@@ -27,10 +27,10 @@ Section Cross References
     main.o(i.main) refers to shape.o(i.shape_constructor) for shape_constructor
     main.o(i.main) refers to rectangle.o(i.Rectangle_ctor) for Rectangle_ctor
     main.o(i.main) refers to shape.o(i.shape_moveBy) for shape_moveBy
-    main.o(i.main) refers to shape.o(i.shape_distanceFrom) for shape_distanceFrom
-    main.o(i.main) refers to bsp.o(i.Q_onAssert) for Q_onAssert
     main.o(i.main) refers to rectangle.o(i.Rectangle_draw) for Rectangle_draw
     main.o(i.main) refers to rectangle.o(i.Rectangle_area) for Rectangle_area
+    main.o(i.main) refers to shape.o(i.shape_distanceFrom) for shape_distanceFrom
+    main.o(i.main) refers to bsp.o(i.Q_onAssert) for Q_onAssert
     main.o(i.main) refers to h1_free.o(.text) for free
     main.o(i.main) refers to qxk.o(i.QF_init) for QF_init
     main.o(i.main) refers to bsp.o(i.BSP_init) for BSP_init
@@ -38,9 +38,9 @@ Section Cross References
     main.o(i.main) refers to qxk_xthr.o(i.QXThread_ctor) for QXThread_ctor
     main.o(i.main) refers to qxk.o(i.QF_run) for QF_run
     main.o(i.main) refers to main.o(.data) for s1
+    main.o(i.main) refers to main.o(.bss) for r1
     main.o(i.main) refers to main.o(.constdata) for Q_this_module_
     main.o(i.main) refers to main.o(i.main_blinky1) for main_blinky1
-    main.o(i.main) refers to main.o(.bss) for blinky1
     main.o(i.main) refers to main.o(i.main_blinky2) for main_blinky2
     main.o(i.main) refers to main.o(i.main_blinky3) for main_blinky3
     main.o(i.main_blinky1) refers to bsp.o(i.BSP_sendMorseCode) for BSP_sendMorseCode
@@ -1002,61 +1002,61 @@ Image Symbol Table
     i.initial_events                         0x000023e4   Section        0  qxk.o(i.initial_events)
     initial_events                           0x000023e5   Thumb Code    20  qxk.o(i.initial_events)
     i.main                                   0x000023fc   Section        0  main.o(i.main)
-    i.main_blinky1                           0x000025c8   Section        0  main.o(i.main_blinky1)
-    i.main_blinky2                           0x000025dc   Section        0  main.o(i.main_blinky2)
-    i.main_blinky3                           0x00002608   Section        0  main.o(i.main_blinky3)
-    i.shape_constructor                      0x00002624   Section        0  shape.o(i.shape_constructor)
-    i.shape_distanceFrom                     0x0000262a   Section        0  shape.o(i.shape_distanceFrom)
-    i.shape_moveBy                           0x00002654   Section        0  shape.o(i.shape_moveBy)
-    .constdata                               0x00002666   Section        7  main.o(.constdata)
-    Q_this_module_                           0x00002666   Data           7  main.o(.constdata)
-    .constdata                               0x00002670   Section       40  qep_hsm.o(.constdata)
-    Q_this_module_                           0x00002670   Data           8  qep_hsm.o(.constdata)
-    QEP_reservedEvt_                         0x00002680   Data          16  qep_hsm.o(.constdata)
-    vtable                                   0x00002690   Data           8  qep_hsm.o(.constdata)
-    .constdata                               0x00002698   Section        7  qf_act.o(.constdata)
-    Q_this_module_                           0x00002698   Data           7  qf_act.o(.constdata)
-    .constdata                               0x000026a0   Section       32  qf_actq.o(.constdata)
-    Q_this_module_                           0x000026a0   Data           8  qf_actq.o(.constdata)
-    vtable                                   0x000026a8   Data          20  qf_actq.o(.constdata)
-    tickEvt                                  0x000026bc   Data           4  qf_actq.o(.constdata)
-    .constdata                               0x000026c0   Section        7  qf_dyn.o(.constdata)
-    Q_this_module_                           0x000026c0   Data           7  qf_dyn.o(.constdata)
-    .constdata                               0x000026c7   Section        7  qf_mem.o(.constdata)
-    Q_this_module_                           0x000026c7   Data           7  qf_mem.o(.constdata)
-    .constdata                               0x000026d0   Section       20  qf_qact.o(.constdata)
-    vtable                                   0x000026d0   Data          20  qf_qact.o(.constdata)
-    .constdata                               0x000026e4   Section        8  qf_time.o(.constdata)
-    Q_this_module_                           0x000026e4   Data           8  qf_time.o(.constdata)
-    .constdata                               0x000026ec   Section        4  qxk.o(.constdata)
-    Q_this_module_                           0x000026ec   Data           4  qxk.o(.constdata)
-    .constdata                               0x000026f0   Section       10  qxk_mutex.o(.constdata)
-    Q_this_module_                           0x000026f0   Data          10  qxk_mutex.o(.constdata)
-    .constdata                               0x000026fa   Section        9  qxk_sema.o(.constdata)
-    Q_this_module_                           0x000026fa   Data           9  qxk_sema.o(.constdata)
-    .constdata                               0x00002704   Section       32  qxk_xthr.o(.constdata)
-    Q_this_module_                           0x00002704   Data           9  qxk_xthr.o(.constdata)
-    vtable                                   0x00002710   Data          20  qxk_xthr.o(.constdata)
+    i.main_blinky1                           0x000025e4   Section        0  main.o(i.main_blinky1)
+    i.main_blinky2                           0x000025f8   Section        0  main.o(i.main_blinky2)
+    i.main_blinky3                           0x00002624   Section        0  main.o(i.main_blinky3)
+    i.shape_constructor                      0x00002640   Section        0  shape.o(i.shape_constructor)
+    i.shape_distanceFrom                     0x00002646   Section        0  shape.o(i.shape_distanceFrom)
+    i.shape_moveBy                           0x00002670   Section        0  shape.o(i.shape_moveBy)
+    .constdata                               0x00002682   Section        7  main.o(.constdata)
+    Q_this_module_                           0x00002682   Data           7  main.o(.constdata)
+    .constdata                               0x0000268c   Section       40  qep_hsm.o(.constdata)
+    Q_this_module_                           0x0000268c   Data           8  qep_hsm.o(.constdata)
+    QEP_reservedEvt_                         0x0000269c   Data          16  qep_hsm.o(.constdata)
+    vtable                                   0x000026ac   Data           8  qep_hsm.o(.constdata)
+    .constdata                               0x000026b4   Section        7  qf_act.o(.constdata)
+    Q_this_module_                           0x000026b4   Data           7  qf_act.o(.constdata)
+    .constdata                               0x000026bc   Section       32  qf_actq.o(.constdata)
+    Q_this_module_                           0x000026bc   Data           8  qf_actq.o(.constdata)
+    vtable                                   0x000026c4   Data          20  qf_actq.o(.constdata)
+    tickEvt                                  0x000026d8   Data           4  qf_actq.o(.constdata)
+    .constdata                               0x000026dc   Section        7  qf_dyn.o(.constdata)
+    Q_this_module_                           0x000026dc   Data           7  qf_dyn.o(.constdata)
+    .constdata                               0x000026e3   Section        7  qf_mem.o(.constdata)
+    Q_this_module_                           0x000026e3   Data           7  qf_mem.o(.constdata)
+    .constdata                               0x000026ec   Section       20  qf_qact.o(.constdata)
+    vtable                                   0x000026ec   Data          20  qf_qact.o(.constdata)
+    .constdata                               0x00002700   Section        8  qf_time.o(.constdata)
+    Q_this_module_                           0x00002700   Data           8  qf_time.o(.constdata)
+    .constdata                               0x00002708   Section        4  qxk.o(.constdata)
+    Q_this_module_                           0x00002708   Data           4  qxk.o(.constdata)
+    .constdata                               0x0000270c   Section       10  qxk_mutex.o(.constdata)
+    Q_this_module_                           0x0000270c   Data          10  qxk_mutex.o(.constdata)
+    .constdata                               0x00002716   Section        9  qxk_sema.o(.constdata)
+    Q_this_module_                           0x00002716   Data           9  qxk_sema.o(.constdata)
+    .constdata                               0x00002720   Section       32  qxk_xthr.o(.constdata)
+    Q_this_module_                           0x00002720   Data           9  qxk_xthr.o(.constdata)
+    vtable                                   0x0000272c   Data          20  qxk_xthr.o(.constdata)
     .data                                    0x20000000   Section        8  bsp.o(.data)
     Morse_mutex                              0x20000000   Data           8  bsp.o(.data)
-    .data                                    0x20000008   Section       20  main.o(.data)
-    .data                                    0x2000001c   Section        4  system_tm4c123gh6pm.o(.data)
-    .data                                    0x20000020   Section        4  qf_dyn.o(.data)
-    .data                                    0x20000024   Section        8  qf_ps.o(.data)
-    .bss                                     0x2000002c   Section      648  main.o(.bss)
-    .bss                                     0x200002b4   Section      132  qf_act.o(.bss)
-    .bss                                     0x20000338   Section       60  qf_dyn.o(.bss)
-    .bss                                     0x20000374   Section       32  qf_time.o(.bss)
-    .bss                                     0x20000394   Section       60  qxk.o(.bss)
-    l_idleThread                             0x200003a8   Data          40  qxk.o(.bss)
-    .bss                                     0x200003d0   Section       96  libspace.o(.bss)
-    HEAP                                     0x20000430   Section     1024  startup_tm4c123gh6pm.o(HEAP)
-    __heap_base                              0x20000430   Data           0  startup_tm4c123gh6pm.o(HEAP)
-    STACK                                    0x20000830   Section     1024  startup_tm4c123gh6pm.o(STACK)
-    __heap_limit                             0x20000830   Data           0  startup_tm4c123gh6pm.o(HEAP)
-    __stack_base                             0x20000830   Data           0  startup_tm4c123gh6pm.o(STACK)
-    __initial_sp                             0x20000c30   Data           0  startup_tm4c123gh6pm.o(STACK)
-    __stack_limit                            0x20000c30   Data           0  startup_tm4c123gh6pm.o(STACK)
+    .data                                    0x20000008   Section       16  main.o(.data)
+    .data                                    0x20000018   Section        4  system_tm4c123gh6pm.o(.data)
+    .data                                    0x2000001c   Section        4  qf_dyn.o(.data)
+    .data                                    0x20000020   Section        8  qf_ps.o(.data)
+    .bss                                     0x20000028   Section      660  main.o(.bss)
+    .bss                                     0x200002bc   Section      132  qf_act.o(.bss)
+    .bss                                     0x20000340   Section       60  qf_dyn.o(.bss)
+    .bss                                     0x2000037c   Section       32  qf_time.o(.bss)
+    .bss                                     0x2000039c   Section       60  qxk.o(.bss)
+    l_idleThread                             0x200003b0   Data          40  qxk.o(.bss)
+    .bss                                     0x200003d8   Section       96  libspace.o(.bss)
+    HEAP                                     0x20000438   Section     1024  startup_tm4c123gh6pm.o(HEAP)
+    __heap_base                              0x20000438   Data           0  startup_tm4c123gh6pm.o(HEAP)
+    STACK                                    0x20000838   Section     1024  startup_tm4c123gh6pm.o(STACK)
+    __heap_limit                             0x20000838   Data           0  startup_tm4c123gh6pm.o(HEAP)
+    __stack_base                             0x20000838   Data           0  startup_tm4c123gh6pm.o(STACK)
+    __initial_sp                             0x20000c38   Data           0  startup_tm4c123gh6pm.o(STACK)
+    __stack_limit                            0x20000c38   Data           0  startup_tm4c123gh6pm.o(STACK)
 
     Global Symbols
 
@@ -1344,35 +1344,35 @@ Image Symbol Table
     SysTick_Handler                          0x00002129   Thumb Code    48  bsp.o(i.SysTick_Handler)
     SystemCoreClockUpdate                    0x0000215d   Thumb Code   184  system_tm4c123gh6pm.o(i.SystemCoreClockUpdate)
     SystemInit                               0x00002221   Thumb Code   126  system_tm4c123gh6pm.o(i.SystemInit)
-    main                                     0x000023fd   Thumb Code   408  main.o(i.main)
-    main_blinky1                             0x000025c9   Thumb Code    16  main.o(i.main_blinky1)
-    main_blinky2                             0x000025dd   Thumb Code    40  main.o(i.main_blinky2)
-    main_blinky3                             0x00002609   Thumb Code    22  main.o(i.main_blinky3)
-    shape_constructor                        0x00002625   Thumb Code     6  shape.o(i.shape_constructor)
-    shape_distanceFrom                       0x0000262b   Thumb Code    42  shape.o(i.shape_distanceFrom)
-    shape_moveBy                             0x00002655   Thumb Code    18  shape.o(i.shape_moveBy)
-    QP_versionStr                            0x00002678   Data           7  qep_hsm.o(.constdata)
-    Region$$Table$$Base                      0x00002724   Number         0  anon$$obj.o(Region$$Table)
-    Region$$Table$$Limit                     0x00002744   Number         0  anon$$obj.o(Region$$Table)
+    main                                     0x000023fd   Thumb Code   436  main.o(i.main)
+    main_blinky1                             0x000025e5   Thumb Code    16  main.o(i.main_blinky1)
+    main_blinky2                             0x000025f9   Thumb Code    40  main.o(i.main_blinky2)
+    main_blinky3                             0x00002625   Thumb Code    22  main.o(i.main_blinky3)
+    shape_constructor                        0x00002641   Thumb Code     6  shape.o(i.shape_constructor)
+    shape_distanceFrom                       0x00002647   Thumb Code    42  shape.o(i.shape_distanceFrom)
+    shape_moveBy                             0x00002671   Thumb Code    18  shape.o(i.shape_moveBy)
+    QP_versionStr                            0x00002694   Data           7  qep_hsm.o(.constdata)
+    Region$$Table$$Base                      0x00002740   Number         0  anon$$obj.o(Region$$Table)
+    Region$$Table$$Limit                     0x00002760   Number         0  anon$$obj.o(Region$$Table)
     SW1_sema                                 0x20000008   Data           8  main.o(.data)
-    s1                                       0x20000010   Data           4  main.o(.data)
-    r1                                       0x20000014   Data           8  main.o(.data)
-    SystemCoreClock                          0x2000001c   Data           4  system_tm4c123gh6pm.o(.data)
-    QF_maxPool_                              0x20000020   Data           4  qf_dyn.o(.data)
-    QF_subscrList_                           0x20000024   Data           4  qf_ps.o(.data)
-    QF_maxPubSignal_                         0x20000028   Data           4  qf_ps.o(.data)
-    stack_blinky1                            0x2000002c   Data         160  main.o(.bss)
-    blinky1                                  0x200000cc   Data          56  main.o(.bss)
-    stack_blinky2                            0x20000104   Data         160  main.o(.bss)
-    blinky2                                  0x200001a4   Data          56  main.o(.bss)
-    stack_blinky3                            0x200001dc   Data         160  main.o(.bss)
-    blinky3                                  0x2000027c   Data          56  main.o(.bss)
-    QF_active_                               0x200002b4   Data         132  qf_act.o(.bss)
-    QF_pool_                                 0x20000338   Data          60  qf_dyn.o(.bss)
-    QF_timeEvtHead_                          0x20000374   Data          32  qf_time.o(.bss)
-    QXK_attr_                                0x20000394   Data          20  qxk.o(.bss)
-    __libspace_start                         0x200003d0   Data          96  libspace.o(.bss)
-    __temporary_stack_top$libspace           0x20000430   Data           0  libspace.o(.bss)
+    s1                                       0x20000010   Data           8  main.o(.data)
+    SystemCoreClock                          0x20000018   Data           4  system_tm4c123gh6pm.o(.data)
+    QF_maxPool_                              0x2000001c   Data           4  qf_dyn.o(.data)
+    QF_subscrList_                           0x20000020   Data           4  qf_ps.o(.data)
+    QF_maxPubSignal_                         0x20000024   Data           4  qf_ps.o(.data)
+    r1                                       0x20000028   Data          12  main.o(.bss)
+    stack_blinky1                            0x20000034   Data         160  main.o(.bss)
+    blinky1                                  0x200000d4   Data          56  main.o(.bss)
+    stack_blinky2                            0x2000010c   Data         160  main.o(.bss)
+    blinky2                                  0x200001ac   Data          56  main.o(.bss)
+    stack_blinky3                            0x200001e4   Data         160  main.o(.bss)
+    blinky3                                  0x20000284   Data          56  main.o(.bss)
+    QF_active_                               0x200002bc   Data         132  qf_act.o(.bss)
+    QF_pool_                                 0x20000340   Data          60  qf_dyn.o(.bss)
+    QF_timeEvtHead_                          0x2000037c   Data          32  qf_time.o(.bss)
+    QXK_attr_                                0x2000039c   Data          20  qxk.o(.bss)
+    __libspace_start                         0x200003d8   Data          96  libspace.o(.bss)
+    __temporary_stack_top$libspace           0x20000438   Data           0  libspace.o(.bss)
 
 
 
@@ -1382,213 +1382,213 @@ Memory Map of the image
 
   Image Entry point : 0x000003d5
 
-  Load Region LR_IROM1 (Base: 0x00000000, Size: 0x00002770, Max: 0x00040000, ABSOLUTE)
+  Load Region LR_IROM1 (Base: 0x00000000, Size: 0x00002788, Max: 0x00040000, ABSOLUTE)
 
-    Execution Region ER_IROM1 (Exec base: 0x00000000, Load base: 0x00000000, Size: 0x00002744, Max: 0x00040000, ABSOLUTE)
+    Execution Region ER_IROM1 (Exec base: 0x00000000, Load base: 0x00000000, Size: 0x00002760, Max: 0x00040000, ABSOLUTE)
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
-    0x00000000   0x00000000   0x0000026c   Data   RO          394    RESET               startup_tm4c123gh6pm.o
-    0x0000026c   0x0000026c   0x00000008   Code   RO         1315  * !!!main             c_w.l(__main.o)
-    0x00000274   0x00000274   0x00000034   Code   RO         1518    !!!scatter          c_w.l(__scatter.o)
-    0x000002a8   0x000002a8   0x0000001a   Code   RO         1520    !!handler_copy      c_w.l(__scatter_copy.o)
+    0x00000000   0x00000000   0x0000026c   Data   RO          391    RESET               startup_tm4c123gh6pm.o
+    0x0000026c   0x0000026c   0x00000008   Code   RO         1312  * !!!main             c_w.l(__main.o)
+    0x00000274   0x00000274   0x00000034   Code   RO         1515    !!!scatter          c_w.l(__scatter.o)
+    0x000002a8   0x000002a8   0x0000001a   Code   RO         1517    !!handler_copy      c_w.l(__scatter_copy.o)
     0x000002c2   0x000002c2   0x00000002   PAD
-    0x000002c4   0x000002c4   0x0000001c   Code   RO         1522    !!handler_zi        c_w.l(__scatter_zi.o)
-    0x000002e0   0x000002e0   0x00000002   Code   RO         1457    .ARM.Collect$$libinit$$00000000  c_w.l(libinit.o)
-    0x000002e2   0x000002e2   0x00000000   Code   RO         1350    .ARM.Collect$$libinit$$00000002  c_w.l(libinit2.o)
-    0x000002e2   0x000002e2   0x00000000   Code   RO         1352    .ARM.Collect$$libinit$$00000004  c_w.l(libinit2.o)
-    0x000002e2   0x000002e2   0x00000008   Code   RO         1353    .ARM.Collect$$libinit$$00000005  c_w.l(libinit2.o)
-    0x000002ea   0x000002ea   0x00000000   Code   RO         1355    .ARM.Collect$$libinit$$0000000A  c_w.l(libinit2.o)
-    0x000002ea   0x000002ea   0x00000000   Code   RO         1357    .ARM.Collect$$libinit$$0000000C  c_w.l(libinit2.o)
-    0x000002ea   0x000002ea   0x00000000   Code   RO         1359    .ARM.Collect$$libinit$$0000000E  c_w.l(libinit2.o)
-    0x000002ea   0x000002ea   0x00000000   Code   RO         1362    .ARM.Collect$$libinit$$00000011  c_w.l(libinit2.o)
-    0x000002ea   0x000002ea   0x00000000   Code   RO         1364    .ARM.Collect$$libinit$$00000013  c_w.l(libinit2.o)
-    0x000002ea   0x000002ea   0x00000000   Code   RO         1366    .ARM.Collect$$libinit$$00000015  c_w.l(libinit2.o)
-    0x000002ea   0x000002ea   0x00000000   Code   RO         1368    .ARM.Collect$$libinit$$00000017  c_w.l(libinit2.o)
-    0x000002ea   0x000002ea   0x00000000   Code   RO         1370    .ARM.Collect$$libinit$$00000019  c_w.l(libinit2.o)
-    0x000002ea   0x000002ea   0x00000000   Code   RO         1372    .ARM.Collect$$libinit$$0000001B  c_w.l(libinit2.o)
-    0x000002ea   0x000002ea   0x00000000   Code   RO         1374    .ARM.Collect$$libinit$$0000001D  c_w.l(libinit2.o)
-    0x000002ea   0x000002ea   0x00000000   Code   RO         1376    .ARM.Collect$$libinit$$0000001F  c_w.l(libinit2.o)
-    0x000002ea   0x000002ea   0x00000000   Code   RO         1378    .ARM.Collect$$libinit$$00000021  c_w.l(libinit2.o)
-    0x000002ea   0x000002ea   0x00000000   Code   RO         1380    .ARM.Collect$$libinit$$00000023  c_w.l(libinit2.o)
-    0x000002ea   0x000002ea   0x00000000   Code   RO         1382    .ARM.Collect$$libinit$$00000025  c_w.l(libinit2.o)
-    0x000002ea   0x000002ea   0x00000000   Code   RO         1386    .ARM.Collect$$libinit$$0000002C  c_w.l(libinit2.o)
-    0x000002ea   0x000002ea   0x00000000   Code   RO         1388    .ARM.Collect$$libinit$$0000002E  c_w.l(libinit2.o)
-    0x000002ea   0x000002ea   0x00000000   Code   RO         1390    .ARM.Collect$$libinit$$00000030  c_w.l(libinit2.o)
-    0x000002ea   0x000002ea   0x00000000   Code   RO         1392    .ARM.Collect$$libinit$$00000032  c_w.l(libinit2.o)
-    0x000002ea   0x000002ea   0x00000002   Code   RO         1393    .ARM.Collect$$libinit$$00000033  c_w.l(libinit2.o)
-    0x000002ec   0x000002ec   0x00000002   Code   RO         1515    .ARM.Collect$$libshutdown$$00000000  c_w.l(libshutdown.o)
-    0x000002ee   0x000002ee   0x00000000   Code   RO         1471    .ARM.Collect$$libshutdown$$00000002  c_w.l(libshutdown2.o)
-    0x000002ee   0x000002ee   0x00000000   Code   RO         1473    .ARM.Collect$$libshutdown$$00000004  c_w.l(libshutdown2.o)
-    0x000002ee   0x000002ee   0x00000000   Code   RO         1476    .ARM.Collect$$libshutdown$$00000007  c_w.l(libshutdown2.o)
-    0x000002ee   0x000002ee   0x00000000   Code   RO         1479    .ARM.Collect$$libshutdown$$0000000A  c_w.l(libshutdown2.o)
-    0x000002ee   0x000002ee   0x00000000   Code   RO         1481    .ARM.Collect$$libshutdown$$0000000C  c_w.l(libshutdown2.o)
-    0x000002ee   0x000002ee   0x00000000   Code   RO         1484    .ARM.Collect$$libshutdown$$0000000F  c_w.l(libshutdown2.o)
-    0x000002ee   0x000002ee   0x00000002   Code   RO         1485    .ARM.Collect$$libshutdown$$00000010  c_w.l(libshutdown2.o)
-    0x000002f0   0x000002f0   0x00000000   Code   RO         1319    .ARM.Collect$$rtentry$$00000000  c_w.l(__rtentry.o)
-    0x000002f0   0x000002f0   0x00000000   Code   RO         1400    .ARM.Collect$$rtentry$$00000002  c_w.l(__rtentry2.o)
-    0x000002f0   0x000002f0   0x00000006   Code   RO         1412    .ARM.Collect$$rtentry$$00000004  c_w.l(__rtentry4.o)
-    0x000002f6   0x000002f6   0x00000000   Code   RO         1402    .ARM.Collect$$rtentry$$00000009  c_w.l(__rtentry2.o)
-    0x000002f6   0x000002f6   0x00000004   Code   RO         1403    .ARM.Collect$$rtentry$$0000000A  c_w.l(__rtentry2.o)
-    0x000002fa   0x000002fa   0x00000000   Code   RO         1405    .ARM.Collect$$rtentry$$0000000C  c_w.l(__rtentry2.o)
-    0x000002fa   0x000002fa   0x00000008   Code   RO         1406    .ARM.Collect$$rtentry$$0000000D  c_w.l(__rtentry2.o)
-    0x00000302   0x00000302   0x00000002   Code   RO         1460    .ARM.Collect$$rtexit$$00000000  c_w.l(rtexit.o)
-    0x00000304   0x00000304   0x00000000   Code   RO         1489    .ARM.Collect$$rtexit$$00000002  c_w.l(rtexit2.o)
-    0x00000304   0x00000304   0x00000004   Code   RO         1490    .ARM.Collect$$rtexit$$00000003  c_w.l(rtexit2.o)
-    0x00000308   0x00000308   0x00000006   Code   RO         1491    .ARM.Collect$$rtexit$$00000004  c_w.l(rtexit2.o)
+    0x000002c4   0x000002c4   0x0000001c   Code   RO         1519    !!handler_zi        c_w.l(__scatter_zi.o)
+    0x000002e0   0x000002e0   0x00000002   Code   RO         1454    .ARM.Collect$$libinit$$00000000  c_w.l(libinit.o)
+    0x000002e2   0x000002e2   0x00000000   Code   RO         1347    .ARM.Collect$$libinit$$00000002  c_w.l(libinit2.o)
+    0x000002e2   0x000002e2   0x00000000   Code   RO         1349    .ARM.Collect$$libinit$$00000004  c_w.l(libinit2.o)
+    0x000002e2   0x000002e2   0x00000008   Code   RO         1350    .ARM.Collect$$libinit$$00000005  c_w.l(libinit2.o)
+    0x000002ea   0x000002ea   0x00000000   Code   RO         1352    .ARM.Collect$$libinit$$0000000A  c_w.l(libinit2.o)
+    0x000002ea   0x000002ea   0x00000000   Code   RO         1354    .ARM.Collect$$libinit$$0000000C  c_w.l(libinit2.o)
+    0x000002ea   0x000002ea   0x00000000   Code   RO         1356    .ARM.Collect$$libinit$$0000000E  c_w.l(libinit2.o)
+    0x000002ea   0x000002ea   0x00000000   Code   RO         1359    .ARM.Collect$$libinit$$00000011  c_w.l(libinit2.o)
+    0x000002ea   0x000002ea   0x00000000   Code   RO         1361    .ARM.Collect$$libinit$$00000013  c_w.l(libinit2.o)
+    0x000002ea   0x000002ea   0x00000000   Code   RO         1363    .ARM.Collect$$libinit$$00000015  c_w.l(libinit2.o)
+    0x000002ea   0x000002ea   0x00000000   Code   RO         1365    .ARM.Collect$$libinit$$00000017  c_w.l(libinit2.o)
+    0x000002ea   0x000002ea   0x00000000   Code   RO         1367    .ARM.Collect$$libinit$$00000019  c_w.l(libinit2.o)
+    0x000002ea   0x000002ea   0x00000000   Code   RO         1369    .ARM.Collect$$libinit$$0000001B  c_w.l(libinit2.o)
+    0x000002ea   0x000002ea   0x00000000   Code   RO         1371    .ARM.Collect$$libinit$$0000001D  c_w.l(libinit2.o)
+    0x000002ea   0x000002ea   0x00000000   Code   RO         1373    .ARM.Collect$$libinit$$0000001F  c_w.l(libinit2.o)
+    0x000002ea   0x000002ea   0x00000000   Code   RO         1375    .ARM.Collect$$libinit$$00000021  c_w.l(libinit2.o)
+    0x000002ea   0x000002ea   0x00000000   Code   RO         1377    .ARM.Collect$$libinit$$00000023  c_w.l(libinit2.o)
+    0x000002ea   0x000002ea   0x00000000   Code   RO         1379    .ARM.Collect$$libinit$$00000025  c_w.l(libinit2.o)
+    0x000002ea   0x000002ea   0x00000000   Code   RO         1383    .ARM.Collect$$libinit$$0000002C  c_w.l(libinit2.o)
+    0x000002ea   0x000002ea   0x00000000   Code   RO         1385    .ARM.Collect$$libinit$$0000002E  c_w.l(libinit2.o)
+    0x000002ea   0x000002ea   0x00000000   Code   RO         1387    .ARM.Collect$$libinit$$00000030  c_w.l(libinit2.o)
+    0x000002ea   0x000002ea   0x00000000   Code   RO         1389    .ARM.Collect$$libinit$$00000032  c_w.l(libinit2.o)
+    0x000002ea   0x000002ea   0x00000002   Code   RO         1390    .ARM.Collect$$libinit$$00000033  c_w.l(libinit2.o)
+    0x000002ec   0x000002ec   0x00000002   Code   RO         1512    .ARM.Collect$$libshutdown$$00000000  c_w.l(libshutdown.o)
+    0x000002ee   0x000002ee   0x00000000   Code   RO         1468    .ARM.Collect$$libshutdown$$00000002  c_w.l(libshutdown2.o)
+    0x000002ee   0x000002ee   0x00000000   Code   RO         1470    .ARM.Collect$$libshutdown$$00000004  c_w.l(libshutdown2.o)
+    0x000002ee   0x000002ee   0x00000000   Code   RO         1473    .ARM.Collect$$libshutdown$$00000007  c_w.l(libshutdown2.o)
+    0x000002ee   0x000002ee   0x00000000   Code   RO         1476    .ARM.Collect$$libshutdown$$0000000A  c_w.l(libshutdown2.o)
+    0x000002ee   0x000002ee   0x00000000   Code   RO         1478    .ARM.Collect$$libshutdown$$0000000C  c_w.l(libshutdown2.o)
+    0x000002ee   0x000002ee   0x00000000   Code   RO         1481    .ARM.Collect$$libshutdown$$0000000F  c_w.l(libshutdown2.o)
+    0x000002ee   0x000002ee   0x00000002   Code   RO         1482    .ARM.Collect$$libshutdown$$00000010  c_w.l(libshutdown2.o)
+    0x000002f0   0x000002f0   0x00000000   Code   RO         1316    .ARM.Collect$$rtentry$$00000000  c_w.l(__rtentry.o)
+    0x000002f0   0x000002f0   0x00000000   Code   RO         1397    .ARM.Collect$$rtentry$$00000002  c_w.l(__rtentry2.o)
+    0x000002f0   0x000002f0   0x00000006   Code   RO         1409    .ARM.Collect$$rtentry$$00000004  c_w.l(__rtentry4.o)
+    0x000002f6   0x000002f6   0x00000000   Code   RO         1399    .ARM.Collect$$rtentry$$00000009  c_w.l(__rtentry2.o)
+    0x000002f6   0x000002f6   0x00000004   Code   RO         1400    .ARM.Collect$$rtentry$$0000000A  c_w.l(__rtentry2.o)
+    0x000002fa   0x000002fa   0x00000000   Code   RO         1402    .ARM.Collect$$rtentry$$0000000C  c_w.l(__rtentry2.o)
+    0x000002fa   0x000002fa   0x00000008   Code   RO         1403    .ARM.Collect$$rtentry$$0000000D  c_w.l(__rtentry2.o)
+    0x00000302   0x00000302   0x00000002   Code   RO         1457    .ARM.Collect$$rtexit$$00000000  c_w.l(rtexit.o)
+    0x00000304   0x00000304   0x00000000   Code   RO         1486    .ARM.Collect$$rtexit$$00000002  c_w.l(rtexit2.o)
+    0x00000304   0x00000304   0x00000004   Code   RO         1487    .ARM.Collect$$rtexit$$00000003  c_w.l(rtexit2.o)
+    0x00000308   0x00000308   0x00000006   Code   RO         1488    .ARM.Collect$$rtexit$$00000004  c_w.l(rtexit2.o)
     0x0000030e   0x0000030e   0x00000002   PAD
-    0x00000310   0x00000310   0x000000c4   Code   RO         1227    .emb_text           qxk_port.o
-    0x000003d4   0x000003d4   0x00000000   Code   RO         1416    .emb_text           c_w.l(maybetermalloc1.o)
-    0x000003d4   0x000003d4   0x0000007c   Code   RO          395  * .text               startup_tm4c123gh6pm.o
-    0x00000450   0x00000450   0x0000005e   Code   RO         1255    .text               c_w.l(h1_alloc.o)
-    0x000004ae   0x000004ae   0x0000004e   Code   RO         1257    .text               c_w.l(h1_free.o)
-    0x000004fc   0x000004fc   0x00000006   Code   RO         1313    .text               c_w.l(heapauxi.o)
+    0x00000310   0x00000310   0x000000c4   Code   RO         1224    .emb_text           qxk_port.o
+    0x000003d4   0x000003d4   0x00000000   Code   RO         1413    .emb_text           c_w.l(maybetermalloc1.o)
+    0x000003d4   0x000003d4   0x0000007c   Code   RO          392  * .text               startup_tm4c123gh6pm.o
+    0x00000450   0x00000450   0x0000005e   Code   RO         1252    .text               c_w.l(h1_alloc.o)
+    0x000004ae   0x000004ae   0x0000004e   Code   RO         1254    .text               c_w.l(h1_free.o)
+    0x000004fc   0x000004fc   0x00000006   Code   RO         1310    .text               c_w.l(heapauxi.o)
     0x00000502   0x00000502   0x00000002   PAD
-    0x00000504   0x00000504   0x00000008   Code   RO         1323    .text               c_w.l(rt_heap_descriptor_intlibspace.o)
-    0x0000050c   0x0000050c   0x00000004   Code   RO         1325    .text               c_w.l(hguard.o)
-    0x00000510   0x00000510   0x0000008a   Code   RO         1327    .text               c_w.l(init_alloc.o)
-    0x0000059a   0x0000059a   0x0000000e   Code   RO         1331    .text               c_w.l(h1_init.o)
-    0x000005a8   0x000005a8   0x00000008   Code   RO         1396    .text               c_w.l(libspace.o)
-    0x000005b0   0x000005b0   0x00000034   Code   RO         1418    .text               c_w.l(h1_extend.o)
-    0x000005e4   0x000005e4   0x0000000e   Code   RO         1422    .text               c_w.l(defsig_rtmem_outer.o)
-    0x000005f2   0x000005f2   0x00000002   Code   RO         1433    .text               c_w.l(use_no_semi.o)
-    0x000005f4   0x000005f4   0x00000000   Code   RO         1435    .text               c_w.l(indicate_semi.o)
-    0x000005f4   0x000005f4   0x0000004a   Code   RO         1436    .text               c_w.l(sys_stackheap_outer.o)
-    0x0000063e   0x0000063e   0x00000012   Code   RO         1442    .text               c_w.l(exit.o)
-    0x00000650   0x00000650   0x0000000a   Code   RO         1444    .text               c_w.l(defsig_exit.o)
+    0x00000504   0x00000504   0x00000008   Code   RO         1320    .text               c_w.l(rt_heap_descriptor_intlibspace.o)
+    0x0000050c   0x0000050c   0x00000004   Code   RO         1322    .text               c_w.l(hguard.o)
+    0x00000510   0x00000510   0x0000008a   Code   RO         1324    .text               c_w.l(init_alloc.o)
+    0x0000059a   0x0000059a   0x0000000e   Code   RO         1328    .text               c_w.l(h1_init.o)
+    0x000005a8   0x000005a8   0x00000008   Code   RO         1393    .text               c_w.l(libspace.o)
+    0x000005b0   0x000005b0   0x00000034   Code   RO         1415    .text               c_w.l(h1_extend.o)
+    0x000005e4   0x000005e4   0x0000000e   Code   RO         1419    .text               c_w.l(defsig_rtmem_outer.o)
+    0x000005f2   0x000005f2   0x00000002   Code   RO         1430    .text               c_w.l(use_no_semi.o)
+    0x000005f4   0x000005f4   0x00000000   Code   RO         1432    .text               c_w.l(indicate_semi.o)
+    0x000005f4   0x000005f4   0x0000004a   Code   RO         1433    .text               c_w.l(sys_stackheap_outer.o)
+    0x0000063e   0x0000063e   0x00000012   Code   RO         1439    .text               c_w.l(exit.o)
+    0x00000650   0x00000650   0x0000000a   Code   RO         1441    .text               c_w.l(defsig_exit.o)
     0x0000065a   0x0000065a   0x00000002   PAD
-    0x0000065c   0x0000065c   0x00000050   Code   RO         1446    .text               c_w.l(defsig_rtmem_inner.o)
-    0x000006ac   0x000006ac   0x0000000c   Code   RO         1458    .text               c_w.l(sys_exit.o)
-    0x000006b8   0x000006b8   0x00000032   Code   RO         1468    .text               c_w.l(defsig_general.o)
-    0x000006ea   0x000006ea   0x0000000e   Code   RO         1486    .text               c_w.l(sys_wrch.o)
+    0x0000065c   0x0000065c   0x00000050   Code   RO         1443    .text               c_w.l(defsig_rtmem_inner.o)
+    0x000006ac   0x000006ac   0x0000000c   Code   RO         1455    .text               c_w.l(sys_exit.o)
+    0x000006b8   0x000006b8   0x00000032   Code   RO         1465    .text               c_w.l(defsig_general.o)
+    0x000006ea   0x000006ea   0x0000000e   Code   RO         1483    .text               c_w.l(sys_wrch.o)
     0x000006f8   0x000006f8   0x000000ac   Code   RO            4    i.BSP_init          bsp.o
     0x000007a4   0x000007a4   0x0000003c   Code   RO            7    i.BSP_ledBlueToggle  bsp.o
     0x000007e0   0x000007e0   0x0000000c   Code   RO            8    i.BSP_ledGreenOff   bsp.o
     0x000007ec   0x000007ec   0x0000000c   Code   RO            9    i.BSP_ledGreenOn    bsp.o
     0x000007f8   0x000007f8   0x0000005c   Code   RO           13    i.BSP_sendMorseCode  bsp.o
     0x00000854   0x00000854   0x00000050   Code   RO           14    i.GPIOPortF_IRQHandler  bsp.o
-    0x000008a4   0x000008a4   0x00000020   Code   RO          818    i.QActive_ctor      qf_qact.o
-    0x000008c4   0x000008c4   0x00000088   Code   RO          566    i.QActive_get_      qf_actq.o
-    0x0000094c   0x0000094c   0x000000b4   Code   RO          567    i.QActive_postLIFO_  qf_actq.o
-    0x00000a00   0x00000a00   0x000000f0   Code   RO          568    i.QActive_post_     qf_actq.o
-    0x00000af0   0x00000af0   0x000000a4   Code   RO          956    i.QActive_start_    qxk.o
-    0x00000b94   0x00000b94   0x00000018   Code   RO          835    i.QEQueue_init      qf_qeq.o
-    0x00000bac   0x00000bac   0x00000054   Code   RO          512    i.QF_add_           qf_act.o
-    0x00000c00   0x00000c00   0x00000016   Code   RO          513    i.QF_bzero          qf_act.o
+    0x000008a4   0x000008a4   0x00000020   Code   RO          815    i.QActive_ctor      qf_qact.o
+    0x000008c4   0x000008c4   0x00000088   Code   RO          563    i.QActive_get_      qf_actq.o
+    0x0000094c   0x0000094c   0x000000b4   Code   RO          564    i.QActive_postLIFO_  qf_actq.o
+    0x00000a00   0x00000a00   0x000000f0   Code   RO          565    i.QActive_post_     qf_actq.o
+    0x00000af0   0x00000af0   0x000000a4   Code   RO          953    i.QActive_start_    qxk.o
+    0x00000b94   0x00000b94   0x00000018   Code   RO          832    i.QEQueue_init      qf_qeq.o
+    0x00000bac   0x00000bac   0x00000054   Code   RO          509    i.QF_add_           qf_act.o
+    0x00000c00   0x00000c00   0x00000016   Code   RO          510    i.QF_bzero          qf_act.o
     0x00000c16   0x00000c16   0x00000002   PAD
-    0x00000c18   0x00000c18   0x00000078   Code   RO          672    i.QF_gc             qf_dyn.o
-    0x00000c90   0x00000c90   0x00000006   Code   RO          570    i.QF_get_BASEPRI    qf_actq.o
-    0x00000c96   0x00000c96   0x00000006   Code   RO          884    i.QF_get_BASEPRI    qf_time.o
-    0x00000c9c   0x00000c9c   0x00000006   Code   RO          957    i.QF_get_BASEPRI    qxk.o
-    0x00000ca2   0x00000ca2   0x00000006   Code   RO         1041    i.QF_get_BASEPRI    qxk_mutex.o
-    0x00000ca8   0x00000ca8   0x00000006   Code   RO         1083    i.QF_get_BASEPRI    qxk_sema.o
-    0x00000cae   0x00000cae   0x00000006   Code   RO         1125    i.QF_get_BASEPRI    qxk_xthr.o
-    0x00000cb4   0x00000cb4   0x00000068   Code   RO          958    i.QF_init           qxk.o
+    0x00000c18   0x00000c18   0x00000078   Code   RO          669    i.QF_gc             qf_dyn.o
+    0x00000c90   0x00000c90   0x00000006   Code   RO          567    i.QF_get_BASEPRI    qf_actq.o
+    0x00000c96   0x00000c96   0x00000006   Code   RO          881    i.QF_get_BASEPRI    qf_time.o
+    0x00000c9c   0x00000c9c   0x00000006   Code   RO          954    i.QF_get_BASEPRI    qxk.o
+    0x00000ca2   0x00000ca2   0x00000006   Code   RO         1038    i.QF_get_BASEPRI    qxk_mutex.o
+    0x00000ca8   0x00000ca8   0x00000006   Code   RO         1080    i.QF_get_BASEPRI    qxk_sema.o
+    0x00000cae   0x00000cae   0x00000006   Code   RO         1122    i.QF_get_BASEPRI    qxk_xthr.o
+    0x00000cb4   0x00000cb4   0x00000068   Code   RO          955    i.QF_init           qxk.o
     0x00000d1c   0x00000d1c   0x00000078   Code   RO           16    i.QF_onStartup      bsp.o
-    0x00000d94   0x00000d94   0x00000024   Code   RO          959    i.QF_run            qxk.o
+    0x00000d94   0x00000d94   0x00000024   Code   RO          956    i.QF_run            qxk.o
     0x00000db8   0x00000db8   0x00000006   Code   RO           17    i.QF_set_BASEPRI    bsp.o
-    0x00000dbe   0x00000dbe   0x00000006   Code   RO          515    i.QF_set_BASEPRI    qf_act.o
-    0x00000dc4   0x00000dc4   0x00000006   Code   RO          571    i.QF_set_BASEPRI    qf_actq.o
-    0x00000dca   0x00000dca   0x00000006   Code   RO          677    i.QF_set_BASEPRI    qf_dyn.o
-    0x00000dd0   0x00000dd0   0x00000006   Code   RO          728    i.QF_set_BASEPRI    qf_mem.o
-    0x00000dd6   0x00000dd6   0x00000006   Code   RO          886    i.QF_set_BASEPRI    qf_time.o
-    0x00000ddc   0x00000ddc   0x00000006   Code   RO          960    i.QF_set_BASEPRI    qxk.o
-    0x00000de2   0x00000de2   0x00000006   Code   RO         1042    i.QF_set_BASEPRI    qxk_mutex.o
-    0x00000de8   0x00000de8   0x00000006   Code   RO         1084    i.QF_set_BASEPRI    qxk_sema.o
-    0x00000dee   0x00000dee   0x00000006   Code   RO         1126    i.QF_set_BASEPRI    qxk_xthr.o
-    0x00000df4   0x00000df4   0x000000f8   Code   RO          887    i.QF_tickX_         qf_time.o
-    0x00000eec   0x00000eec   0x00000014   Code   RO          400    i.QHsm_ctor         qep_hsm.o
-    0x00000f00   0x00000f00   0x0000010c   Code   RO          401    i.QHsm_dispatch_    qep_hsm.o
-    0x0000100c   0x0000100c   0x000000b4   Code   RO          402    i.QHsm_init_        qep_hsm.o
-    0x000010c0   0x000010c0   0x00000006   Code   RO          404    i.QHsm_top          qep_hsm.o
+    0x00000dbe   0x00000dbe   0x00000006   Code   RO          512    i.QF_set_BASEPRI    qf_act.o
+    0x00000dc4   0x00000dc4   0x00000006   Code   RO          568    i.QF_set_BASEPRI    qf_actq.o
+    0x00000dca   0x00000dca   0x00000006   Code   RO          674    i.QF_set_BASEPRI    qf_dyn.o
+    0x00000dd0   0x00000dd0   0x00000006   Code   RO          725    i.QF_set_BASEPRI    qf_mem.o
+    0x00000dd6   0x00000dd6   0x00000006   Code   RO          883    i.QF_set_BASEPRI    qf_time.o
+    0x00000ddc   0x00000ddc   0x00000006   Code   RO          957    i.QF_set_BASEPRI    qxk.o
+    0x00000de2   0x00000de2   0x00000006   Code   RO         1039    i.QF_set_BASEPRI    qxk_mutex.o
+    0x00000de8   0x00000de8   0x00000006   Code   RO         1081    i.QF_set_BASEPRI    qxk_sema.o
+    0x00000dee   0x00000dee   0x00000006   Code   RO         1123    i.QF_set_BASEPRI    qxk_xthr.o
+    0x00000df4   0x00000df4   0x000000f8   Code   RO          884    i.QF_tickX_         qf_time.o
+    0x00000eec   0x00000eec   0x00000014   Code   RO          397    i.QHsm_ctor         qep_hsm.o
+    0x00000f00   0x00000f00   0x0000010c   Code   RO          398    i.QHsm_dispatch_    qep_hsm.o
+    0x0000100c   0x0000100c   0x000000b4   Code   RO          399    i.QHsm_init_        qep_hsm.o
+    0x000010c0   0x000010c0   0x00000006   Code   RO          401    i.QHsm_top          qep_hsm.o
     0x000010c6   0x000010c6   0x00000002   PAD
-    0x000010c8   0x000010c8   0x0000015c   Code   RO          405    i.QHsm_tran_        qep_hsm.o
-    0x00001224   0x00001224   0x00000058   Code   RO          731    i.QMPool_put        qf_mem.o
-    0x0000127c   0x0000127c   0x00000040   Code   RO          573    i.QTicker_dispatch_  qf_actq.o
-    0x000012bc   0x000012bc   0x00000006   Code   RO          574    i.QTicker_init_     qf_actq.o
+    0x000010c8   0x000010c8   0x0000015c   Code   RO          402    i.QHsm_tran_        qep_hsm.o
+    0x00001224   0x00001224   0x00000058   Code   RO          728    i.QMPool_put        qf_mem.o
+    0x0000127c   0x0000127c   0x00000040   Code   RO          570    i.QTicker_dispatch_  qf_actq.o
+    0x000012bc   0x000012bc   0x00000006   Code   RO          571    i.QTicker_init_     qf_actq.o
     0x000012c2   0x000012c2   0x00000002   PAD
-    0x000012c4   0x000012c4   0x00000018   Code   RO          575    i.QTicker_postLIFO_  qf_actq.o
-    0x000012dc   0x000012dc   0x00000080   Code   RO          576    i.QTicker_post_     qf_actq.o
-    0x0000135c   0x0000135c   0x00000038   Code   RO          889    i.QTimeEvt_ctorX    qf_time.o
-    0x00001394   0x00001394   0x000000f8   Code   RO          962    i.QXK_activate_     qxk.o
-    0x0000148c   0x0000148c   0x00000006   Code   RO         1127    i.QXK_get_IPSR      qxk_xthr.o
+    0x000012c4   0x000012c4   0x00000018   Code   RO          572    i.QTicker_postLIFO_  qf_actq.o
+    0x000012dc   0x000012dc   0x00000080   Code   RO          573    i.QTicker_post_     qf_actq.o
+    0x0000135c   0x0000135c   0x00000038   Code   RO          886    i.QTimeEvt_ctorX    qf_time.o
+    0x00001394   0x00001394   0x000000f8   Code   RO          959    i.QXK_activate_     qxk.o
+    0x0000148c   0x0000148c   0x00000006   Code   RO         1124    i.QXK_get_IPSR      qxk_xthr.o
     0x00001492   0x00001492   0x00000002   PAD
-    0x00001494   0x00001494   0x0000006c   Code   RO         1228    i.QXK_init          qxk_port.o
+    0x00001494   0x00001494   0x0000006c   Code   RO         1225    i.QXK_init          qxk_port.o
     0x00001500   0x00001500   0x00000010   Code   RO           18    i.QXK_onIdle        bsp.o
-    0x00001510   0x00001510   0x000000b0   Code   RO          966    i.QXK_sched_        qxk.o
-    0x000015c0   0x000015c0   0x000000ac   Code   RO         1229    i.QXK_stackInit_    qxk_port.o
-    0x0000166c   0x0000166c   0x00000080   Code   RO         1128    i.QXK_threadRet_    qxk_xthr.o
-    0x000016ec   0x000016ec   0x00000060   Code   RO         1043    i.QXMutex_init      qxk_mutex.o
-    0x0000174c   0x0000174c   0x000001c8   Code   RO         1044    i.QXMutex_lock      qxk_mutex.o
-    0x00001914   0x00001914   0x00000178   Code   RO         1046    i.QXMutex_unlock    qxk_mutex.o
-    0x00001a8c   0x00001a8c   0x00000024   Code   RO         1085    i.QXSemaphore_init  qxk_sema.o
-    0x00001ab0   0x00001ab0   0x000000c8   Code   RO         1086    i.QXSemaphore_signal  qxk_sema.o
-    0x00001b78   0x00001b78   0x00000128   Code   RO         1088    i.QXSemaphore_wait  qxk_sema.o
-    0x00001ca0   0x00001ca0   0x00000040   Code   RO         1129    i.QXThread_block_   qxk_xthr.o
-    0x00001ce0   0x00001ce0   0x00000030   Code   RO         1130    i.QXThread_ctor     qxk_xthr.o
-    0x00001d10   0x00001d10   0x000000bc   Code   RO         1131    i.QXThread_delay    qxk_xthr.o
-    0x00001dcc   0x00001dcc   0x00000014   Code   RO         1133    i.QXThread_dispatch_  qxk_xthr.o
-    0x00001de0   0x00001de0   0x00000014   Code   RO         1134    i.QXThread_init_    qxk_xthr.o
-    0x00001df4   0x00001df4   0x00000018   Code   RO         1135    i.QXThread_postLIFO_  qxk_xthr.o
-    0x00001e0c   0x00001e0c   0x00000140   Code   RO         1136    i.QXThread_post_    qxk_xthr.o
-    0x00001f4c   0x00001f4c   0x000000a8   Code   RO         1138    i.QXThread_start_   qxk_xthr.o
-    0x00001ff4   0x00001ff4   0x00000078   Code   RO         1139    i.QXThread_teArm_   qxk_xthr.o
-    0x0000206c   0x0000206c   0x00000012   Code   RO         1140    i.QXThread_teDisarm_  qxk_xthr.o
+    0x00001510   0x00001510   0x000000b0   Code   RO          963    i.QXK_sched_        qxk.o
+    0x000015c0   0x000015c0   0x000000ac   Code   RO         1226    i.QXK_stackInit_    qxk_port.o
+    0x0000166c   0x0000166c   0x00000080   Code   RO         1125    i.QXK_threadRet_    qxk_xthr.o
+    0x000016ec   0x000016ec   0x00000060   Code   RO         1040    i.QXMutex_init      qxk_mutex.o
+    0x0000174c   0x0000174c   0x000001c8   Code   RO         1041    i.QXMutex_lock      qxk_mutex.o
+    0x00001914   0x00001914   0x00000178   Code   RO         1043    i.QXMutex_unlock    qxk_mutex.o
+    0x00001a8c   0x00001a8c   0x00000024   Code   RO         1082    i.QXSemaphore_init  qxk_sema.o
+    0x00001ab0   0x00001ab0   0x000000c8   Code   RO         1083    i.QXSemaphore_signal  qxk_sema.o
+    0x00001b78   0x00001b78   0x00000128   Code   RO         1085    i.QXSemaphore_wait  qxk_sema.o
+    0x00001ca0   0x00001ca0   0x00000040   Code   RO         1126    i.QXThread_block_   qxk_xthr.o
+    0x00001ce0   0x00001ce0   0x00000030   Code   RO         1127    i.QXThread_ctor     qxk_xthr.o
+    0x00001d10   0x00001d10   0x000000bc   Code   RO         1128    i.QXThread_delay    qxk_xthr.o
+    0x00001dcc   0x00001dcc   0x00000014   Code   RO         1130    i.QXThread_dispatch_  qxk_xthr.o
+    0x00001de0   0x00001de0   0x00000014   Code   RO         1131    i.QXThread_init_    qxk_xthr.o
+    0x00001df4   0x00001df4   0x00000018   Code   RO         1132    i.QXThread_postLIFO_  qxk_xthr.o
+    0x00001e0c   0x00001e0c   0x00000140   Code   RO         1133    i.QXThread_post_    qxk_xthr.o
+    0x00001f4c   0x00001f4c   0x000000a8   Code   RO         1135    i.QXThread_start_   qxk_xthr.o
+    0x00001ff4   0x00001ff4   0x00000078   Code   RO         1136    i.QXThread_teArm_   qxk_xthr.o
+    0x0000206c   0x0000206c   0x00000012   Code   RO         1137    i.QXThread_teDisarm_  qxk_xthr.o
     0x0000207e   0x0000207e   0x00000002   PAD
-    0x00002080   0x00002080   0x00000034   Code   RO         1141    i.QXThread_unblock_  qxk_xthr.o
+    0x00002080   0x00002080   0x00000034   Code   RO         1138    i.QXThread_unblock_  qxk_xthr.o
     0x000020b4   0x000020b4   0x00000044   Code   RO           19    i.Q_onAssert        bsp.o
-    0x000020f8   0x000020f8   0x0000000a   Code   RO          323    i.Rectangle_area    rectangle.o
-    0x00002102   0x00002102   0x00000024   Code   RO          324    i.Rectangle_ctor    rectangle.o
-    0x00002126   0x00002126   0x00000002   Code   RO          325    i.Rectangle_draw    rectangle.o
+    0x000020f8   0x000020f8   0x0000000a   Code   RO          320    i.Rectangle_area    rectangle.o
+    0x00002102   0x00002102   0x00000024   Code   RO          321    i.Rectangle_ctor    rectangle.o
+    0x00002126   0x00002126   0x00000002   Code   RO          322    i.Rectangle_draw    rectangle.o
     0x00002128   0x00002128   0x00000034   Code   RO           20    i.SysTick_Handler   bsp.o
-    0x0000215c   0x0000215c   0x000000c4   Code   RO          350    i.SystemCoreClockUpdate  system_tm4c123gh6pm.o
-    0x00002220   0x00002220   0x000000a4   Code   RO          351    i.SystemInit        system_tm4c123gh6pm.o
+    0x0000215c   0x0000215c   0x000000c4   Code   RO          347    i.SystemCoreClockUpdate  system_tm4c123gh6pm.o
+    0x00002220   0x00002220   0x000000a4   Code   RO          348    i.SystemInit        system_tm4c123gh6pm.o
     0x000022c4   0x000022c4   0x00000028   Code   RO           21    i.__NVIC_SetPriority  bsp.o
-    0x000022ec   0x000022ec   0x000000f8   Code   RO          352    i.getOscClk         system_tm4c123gh6pm.o
-    0x000023e4   0x000023e4   0x00000018   Code   RO          967    i.initial_events    qxk.o
-    0x000023fc   0x000023fc   0x000001cc   Code   RO          206    i.main              main.o
-    0x000025c8   0x000025c8   0x00000014   Code   RO          207    i.main_blinky1      main.o
-    0x000025dc   0x000025dc   0x0000002c   Code   RO          208    i.main_blinky2      main.o
-    0x00002608   0x00002608   0x0000001c   Code   RO          209    i.main_blinky3      main.o
-    0x00002624   0x00002624   0x00000006   Code   RO          296    i.shape_constructor  shape.o
-    0x0000262a   0x0000262a   0x0000002a   Code   RO          297    i.shape_distanceFrom  shape.o
-    0x00002654   0x00002654   0x00000012   Code   RO          298    i.shape_moveBy      shape.o
-    0x00002666   0x00002666   0x00000007   Data   RO          211    .constdata          main.o
-    0x0000266d   0x0000266d   0x00000003   PAD
-    0x00002670   0x00002670   0x00000028   Data   RO          406    .constdata          qep_hsm.o
-    0x00002698   0x00002698   0x00000007   Data   RO          517    .constdata          qf_act.o
-    0x0000269f   0x0000269f   0x00000001   PAD
-    0x000026a0   0x000026a0   0x00000020   Data   RO          577    .constdata          qf_actq.o
-    0x000026c0   0x000026c0   0x00000007   Data   RO          679    .constdata          qf_dyn.o
-    0x000026c7   0x000026c7   0x00000007   Data   RO          732    .constdata          qf_mem.o
-    0x000026ce   0x000026ce   0x00000002   PAD
-    0x000026d0   0x000026d0   0x00000014   Data   RO          819    .constdata          qf_qact.o
-    0x000026e4   0x000026e4   0x00000008   Data   RO          895    .constdata          qf_time.o
-    0x000026ec   0x000026ec   0x00000004   Data   RO          969    .constdata          qxk.o
-    0x000026f0   0x000026f0   0x0000000a   Data   RO         1047    .constdata          qxk_mutex.o
-    0x000026fa   0x000026fa   0x00000009   Data   RO         1089    .constdata          qxk_sema.o
-    0x00002703   0x00002703   0x00000001   PAD
-    0x00002704   0x00002704   0x00000020   Data   RO         1142    .constdata          qxk_xthr.o
-    0x00002724   0x00002724   0x00000020   Data   RO         1516    Region$$Table       anon$$obj.o
+    0x000022ec   0x000022ec   0x000000f8   Code   RO          349    i.getOscClk         system_tm4c123gh6pm.o
+    0x000023e4   0x000023e4   0x00000018   Code   RO          964    i.initial_events    qxk.o
+    0x000023fc   0x000023fc   0x000001e8   Code   RO          206    i.main              main.o
+    0x000025e4   0x000025e4   0x00000014   Code   RO          207    i.main_blinky1      main.o
+    0x000025f8   0x000025f8   0x0000002c   Code   RO          208    i.main_blinky2      main.o
+    0x00002624   0x00002624   0x0000001c   Code   RO          209    i.main_blinky3      main.o
+    0x00002640   0x00002640   0x00000006   Code   RO          296    i.shape_constructor  shape.o
+    0x00002646   0x00002646   0x0000002a   Code   RO          297    i.shape_distanceFrom  shape.o
+    0x00002670   0x00002670   0x00000012   Code   RO          298    i.shape_moveBy      shape.o
+    0x00002682   0x00002682   0x00000007   Data   RO          211    .constdata          main.o
+    0x00002689   0x00002689   0x00000003   PAD
+    0x0000268c   0x0000268c   0x00000028   Data   RO          403    .constdata          qep_hsm.o
+    0x000026b4   0x000026b4   0x00000007   Data   RO          514    .constdata          qf_act.o
+    0x000026bb   0x000026bb   0x00000001   PAD
+    0x000026bc   0x000026bc   0x00000020   Data   RO          574    .constdata          qf_actq.o
+    0x000026dc   0x000026dc   0x00000007   Data   RO          676    .constdata          qf_dyn.o
+    0x000026e3   0x000026e3   0x00000007   Data   RO          729    .constdata          qf_mem.o
+    0x000026ea   0x000026ea   0x00000002   PAD
+    0x000026ec   0x000026ec   0x00000014   Data   RO          816    .constdata          qf_qact.o
+    0x00002700   0x00002700   0x00000008   Data   RO          892    .constdata          qf_time.o
+    0x00002708   0x00002708   0x00000004   Data   RO          966    .constdata          qxk.o
+    0x0000270c   0x0000270c   0x0000000a   Data   RO         1044    .constdata          qxk_mutex.o
+    0x00002716   0x00002716   0x00000009   Data   RO         1086    .constdata          qxk_sema.o
+    0x0000271f   0x0000271f   0x00000001   PAD
+    0x00002720   0x00002720   0x00000020   Data   RO         1139    .constdata          qxk_xthr.o
+    0x00002740   0x00002740   0x00000020   Data   RO         1513    Region$$Table       anon$$obj.o
 
 
-    Execution Region RW_IRAM1 (Exec base: 0x20000000, Load base: 0x00002744, Size: 0x00000c30, Max: 0x00008000, ABSOLUTE)
+    Execution Region RW_IRAM1 (Exec base: 0x20000000, Load base: 0x00002760, Size: 0x00000c38, Max: 0x00008000, ABSOLUTE)
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
-    0x20000000   0x00002744   0x00000008   Data   RW           22    .data               bsp.o
-    0x20000008   0x0000274c   0x00000014   Data   RW          212    .data               main.o
-    0x2000001c   0x00002760   0x00000004   Data   RW          353    .data               system_tm4c123gh6pm.o
-    0x20000020   0x00002764   0x00000004   Data   RW          680    .data               qf_dyn.o
-    0x20000024   0x00002768   0x00000008   Data   RW          772    .data               qf_ps.o
-    0x2000002c        -       0x00000288   Zero   RW          210    .bss                main.o
-    0x200002b4        -       0x00000084   Zero   RW          516    .bss                qf_act.o
-    0x20000338        -       0x0000003c   Zero   RW          678    .bss                qf_dyn.o
-    0x20000374        -       0x00000020   Zero   RW          894    .bss                qf_time.o
-    0x20000394        -       0x0000003c   Zero   RW          968    .bss                qxk.o
-    0x200003d0        -       0x00000060   Zero   RW         1397    .bss                c_w.l(libspace.o)
-    0x20000430        -       0x00000400   Zero   RW          393    HEAP                startup_tm4c123gh6pm.o
-    0x20000830        -       0x00000400   Zero   RW          392    STACK               startup_tm4c123gh6pm.o
+    0x20000000   0x00002760   0x00000008   Data   RW           22    .data               bsp.o
+    0x20000008   0x00002768   0x00000010   Data   RW          212    .data               main.o
+    0x20000018   0x00002778   0x00000004   Data   RW          350    .data               system_tm4c123gh6pm.o
+    0x2000001c   0x0000277c   0x00000004   Data   RW          677    .data               qf_dyn.o
+    0x20000020   0x00002780   0x00000008   Data   RW          769    .data               qf_ps.o
+    0x20000028        -       0x00000294   Zero   RW          210    .bss                main.o
+    0x200002bc        -       0x00000084   Zero   RW          513    .bss                qf_act.o
+    0x20000340        -       0x0000003c   Zero   RW          675    .bss                qf_dyn.o
+    0x2000037c        -       0x00000020   Zero   RW          891    .bss                qf_time.o
+    0x2000039c        -       0x0000003c   Zero   RW          965    .bss                qxk.o
+    0x200003d8        -       0x00000060   Zero   RW         1394    .bss                c_w.l(libspace.o)
+    0x20000438        -       0x00000400   Zero   RW          390    HEAP                startup_tm4c123gh6pm.o
+    0x20000838        -       0x00000400   Zero   RW          389    STACK               startup_tm4c123gh6pm.o
 
 
 ==============================================================================
@@ -1599,7 +1599,7 @@ Image component sizes
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
 
        730         88          0          8          0      73236   bsp.o
-       552         66          7         20        648      11448   main.o
+       580         66          7         16        660      11660   main.o
        822         40         40          0          0       8545   qep_hsm.o
        112         10          7          0        132       9654   qf_act.o
        790         36         32          0          0       8905   qf_actq.o
@@ -1615,12 +1615,12 @@ Image component sizes
        544         28          9          0          0       3911   qxk_sema.o
       1188         92         32          0          0       9671   qxk_xthr.o
         48          0          0          0          0       1735   rectangle.o
-        66          0          0          0          0       2188   shape.o
+        66          0          0          0          0       1740   shape.o
        124         28        620          0       2048        988   startup_tm4c123gh6pm.o
        608        140          0          4          0       3699   system_tm4c123gh6pm.o
 
     ----------------------------------------------------------------------
-      8366        720        842         44       2980     156715   Object Totals
+      8394        720        842         40       2992     156479   Object Totals
          0          0         32          0          0          0   (incl. Generated)
         10          0          7          0          0          0   (incl. Padding)
 
@@ -1682,15 +1682,15 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
 
-      9210        798        842         44       3076     153219   Grand Totals
-      9210        798        842         44       3076     153219   ELF Image Totals
-      9210        798        842         44          0          0   ROM Totals
+      9238        798        842         40       3088     152983   Grand Totals
+      9238        798        842         40       3088     152983   ELF Image Totals
+      9238        798        842         40          0          0   ROM Totals
 
 ==============================================================================
 
-    Total RO  Size (Code + RO Data)                10052 (   9.82kB)
-    Total RW  Size (RW Data + ZI Data)              3120 (   3.05kB)
-    Total ROM Size (Code + RO Data + RW Data)      10096 (   9.86kB)
+    Total RO  Size (Code + RO Data)                10080 (   9.84kB)
+    Total RW  Size (RW Data + ZI Data)              3128 (   3.05kB)
+    Total ROM Size (Code + RO Data + RW Data)      10120 (   9.88kB)
 
 ==============================================================================
 

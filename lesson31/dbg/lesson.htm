@@ -3,7 +3,7 @@
 <title>Static Call Graph - [.\dbg\lesson.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image .\dbg\lesson.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060528: Last Updated: Tue Mar 24 15:48:29 2020
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060528: Last Updated: Wed Apr 01 10:52:30 2020
 <BR><P>
 <H3>Maximum Stack Usage =        104 bytes + Unknown(Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -1278,7 +1278,7 @@ Global Symbols
 <LI><a href="#[d1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;QMPool_put
 </UL>
 
-<P><STRONG><a name="[f6]"></a>Rectangle_area</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, rectangle.o(i.Rectangle_area))
+<P><STRONG><a name="[f5]"></a>Rectangle_area</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, rectangle.o(i.Rectangle_area))
 <BR><BR>[Called By]<UL><LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
@@ -1290,7 +1290,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[f5]"></a>Rectangle_draw</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, rectangle.o(i.Rectangle_draw))
+<P><STRONG><a name="[f4]"></a>Rectangle_draw</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, rectangle.o(i.Rectangle_draw))
 <BR><BR>[Called By]<UL><LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
@@ -1316,15 +1316,15 @@ Global Symbols
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> startup_tm4c123gh6pm.o(.text)
 </UL>
-<P><STRONG><a name="[a4]"></a>main</STRONG> (Thumb, 408 bytes, Stack size 40 bytes, main.o(i.main))
+<P><STRONG><a name="[a4]"></a>main</STRONG> (Thumb, 436 bytes, Stack size 40 bytes, main.o(i.main))
 <BR><BR>[Stack]<UL><LI>Max Depth = 104<LI>Call Chain = main &rArr; QF_run &rArr; initial_events &rArr; QXK_activate_ &rArr; QF_gc &rArr; QMPool_put
 </UL>
 <BR>[Calls]<UL><LI><a href="#[f3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;shape_moveBy
-<LI><a href="#[f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;shape_distanceFrom
+<LI><a href="#[f6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;shape_distanceFrom
 <LI><a href="#[f1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;shape_constructor
-<LI><a href="#[f5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Rectangle_draw
+<LI><a href="#[f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Rectangle_draw
 <LI><a href="#[f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Rectangle_ctor
-<LI><a href="#[f6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Rectangle_area
+<LI><a href="#[f5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Rectangle_area
 <LI><a href="#[ec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;QXThread_ctor
 <LI><a href="#[e7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;QXSemaphore_init
 <LI><a href="#[d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;QF_run
@@ -1366,7 +1366,7 @@ Global Symbols
 <LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[f4]"></a>shape_distanceFrom</STRONG> (Thumb, 42 bytes, Stack size 12 bytes, shape.o(i.shape_distanceFrom))
+<P><STRONG><a name="[f6]"></a>shape_distanceFrom</STRONG> (Thumb, 42 bytes, Stack size 12 bytes, shape.o(i.shape_distanceFrom))
 <BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = shape_distanceFrom
 </UL>
 <BR>[Called By]<UL><LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main

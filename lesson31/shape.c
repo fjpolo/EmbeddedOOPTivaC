@@ -22,13 +22,3 @@ int16_t shape_distanceFrom(Shape const * const me, Shape const * other){
     return (dx + dy);
 }
 
-/*Virtual calls - Late binding*/
-void Shape_draw_vcall(Shape const * const me){
-	//me->vptr->draw(me);
-	(*me->vptr->draw)(me);
-}
-	
-uint32_t Shape_area_vcall(Shape const * const me){
-	//return me->vptr->area(me);
-	return (*me->vptr->area)(me);
-}
